@@ -1,0 +1,46 @@
+.App {
+  max-width: 35%;
+  font-size: medium;
+  margin: 2px auto;
+  display: grid;
+  grid:
+    "header" auto
+    "middle" auto
+    "main" 1fr
+    "footer" auto
+    / 1fr;
+  gap: 0.5% 5%;
+}
+
+.Title{
+  grid-area: header;
+  height: 5%;
+}
+
+.Cards {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2%;
+  margin-top: 0%;
+}
+
+.Moves_cont{
+  grid-area: middle;
+}
+
+
+
+body {
+  font-family:"Times New Roman", Times, serif;;
+  margin: 0;
+  text-align: center;
+  background: #2b2501;
+  color: #FFD700;
+}
+
+.Won{
+  text-align: center;
+  font-size: x-large;
+  font-weight: lighter;
+}
